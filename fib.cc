@@ -1,16 +1,16 @@
 #include <nan.h>
 #include <string>
 
-double prev = 0;
-double curr = 0;
+unsigned long prev = 0;
+unsigned long curr = 0;
 
-double clear() {
+unsigned long clear() {
   prev = 0;
   curr = 0;
   return curr;
 }
 
-double next() {
+unsigned long next() {
   if (curr == 0) {
     return ++curr;
   }
